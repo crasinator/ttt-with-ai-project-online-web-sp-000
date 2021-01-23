@@ -67,6 +67,7 @@ class Game
       board.update(input, current_player)
     elsif input.between?(1, 9) == false
       puts "That is an invalid move"
+    end
   end
   
 end 
