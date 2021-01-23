@@ -1,8 +1,8 @@
 module Players
   class Human < Player
    
-    def move
-      gets.chomp
+    def move(x)
+     x = gets.chomp
     end
    
   end
