@@ -167,7 +167,7 @@ describe 'Game' do
       game = Game.new
       game.board.cells = ["X", "O", " ", " ", " ", " ", " ", "O", "X"]
 
-      expect(game.winner).to be_nil
+      expect(game.winner).to eq(" ")
     end
   end
 
