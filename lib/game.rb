@@ -65,9 +65,8 @@ class Game
     input = current_player.move(board).to_i
     if board.valid_move?(input)
       board.update(input, current_player)
-    else
-      puts "no good"
-    end
+    elsif input.between?(1, 9) == false
+      puts "That is an invalid move"
   end
   
 end 
