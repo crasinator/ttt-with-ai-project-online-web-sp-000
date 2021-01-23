@@ -62,15 +62,13 @@ class Game
   end
   
   def turn
+    puts "It's now #{current_player.token}'s turn."
     input = current_player.move(board).to_i
-    until board.valid_move?(input)
-      puts "It's now #{current_player.token}'s turn."
-    end
     if board.valid_move?(input)
       board.update(input, current_player)
     else
+      puts "no good"
     end
-  
   end
   
 end 
